@@ -20,7 +20,7 @@ Configuração da chave da NewsAPI
    - Copie .env.example para .env
    - Defina VITE_NEWSAPI_KEY="SUA_CHAVE"
 
-2) Alternativa: edite diretamente src/contexts/NewsContext.tsx e preencha API_KEY_HARD_CODED.
+2) Alternativa: edite diretamente src/contexts/NewsContext.jsx e preencha API_KEY_HARD_CODED.
    Observação: chaves no frontend ficam expostas; use apenas para fins acadêmicos.
 
 Requisitos de build/execução
@@ -28,14 +28,12 @@ Requisitos de build/execução
 
 Scripts
 - Desenvolvimento: npm run dev
-- Checagem de tipos: npm run typecheck
 - Build de produção: npm run build
 - Preview do build: npm run preview
 
 Estrutura
-- src/components: SearchForm.tsx, NewsList.tsx
-- src/contexts: NewsContext.tsx (useReducer + Context API)
+- src/components (JSX): App.jsx, main.jsx, SearchForm.jsx, NewsList.jsx, styles.css
+- src/contexts: NewsContext.jsx (useReducer + Context API)
 
 Notas
 - A NewsAPI pode limitar/impedir requisições diretas do navegador em alguns planos. Se ocorrer erro "Requests from the browser are not allowed", use uma chave válida e/ou um proxy/backend simples.
-
